@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Mkhitaryan - Fachanwalt für Migrationsrecht | Aschaffenburg</title>
+  <meta name="description"
+    content="Christian Mkhitaryan - Fachanwalt für Migrationsrecht in Aschaffenburg. Spezialist für Aufenthaltsrecht, Staatsangehörigkeitsrecht und Familienzusammenführung.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white text-gray-900 font-inter">
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-white/98 backdrop-blur-lg shadow-sm z-50 transition-all duration-300" id="navbar">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-lg overflow-hidden">
+          <img src="assets/logo.png" alt="Mkhitaryan Law Firm Logo" class="w-full h-full object-contain">
+        </div>
+        <a href="#home" class="font-bold text-xl text-gray-900 hover:text-blue-600 transition-colors">Christian
+          Mkhitaryan</a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 items-center">
+        <li><a href="#home" class="nav-link lang-de">Start</a></li>
+        <li><a href="#home" class="nav-link lang-en hidden">Home</a></li>
+        <li><a href="#practice" class="nav-link lang-de">Praxisbereiche</a></li>
+        <li><a href="#practice" class="nav-link lang-en hidden">Practice Areas</a></li>
+        <li><a href="#about" class="nav-link lang-de">Über mich</a></li>
+        <li><a href="#about" class="nav-link lang-en hidden">About</a></li>
+        <li><a href="#contact" class="nav-link lang-de">Kontakt</a></li>
+        <li><a href="#contact" class="nav-link lang-en hidden">Contact</a></li>
+        <li><a href="impressum.html" class="nav-link">Impressum</a></li>
+        <li>
+          <button id="lang-toggle"
+            class="ml-4 px-3 py-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors flex items-center space-x-2"
+            aria-label="Sprache wechseln / Switch language">
+            <img id="flag-de" src="assets/de.png" alt="Deutsch" class="w-5 h-4 object-cover rounded-sm">
+            <img id="flag-en" src="assets/en.png" alt="English" class="w-5 h-4 object-cover rounded-sm hidden">
+            <span class="text-sm font-medium lang-de">DE</span>
+            <span class="text-sm font-medium lang-en hidden">EN</span>
+          </button>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <div class="container mx-auto px-6 py-4 space-y-4">
+        <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600 lang-de">Start</a>
+        <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600 lang-en hidden">Home</a>
+        <a href="#practice" class="block py-2 text-gray-700 hover:text-blue-600 lang-de">Praxisbereiche</a>
+        <a href="#practice" class="block py-2 text-gray-700 hover:text-blue-600 lang-en hidden">Practice Areas</a>
+        <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 lang-de">Über mich</a>
+        <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 lang-en hidden">About</a>
+        <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600 lang-de">Kontakt</a>
+        <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600 lang-en hidden">Contact</a>
+        <a href="impressum.html" class="block py-2 text-gray-700 hover:text-blue-600">Impressum</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" data-section
+    class="pt-24 pb-16 bg-gradient-to-br from-blue-50 via-white to-indigo-50 min-h-screen flex items-center">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <!-- Profile Image -->
+        <div class="flex-shrink-0 relative frame-container" style="padding-right: 60px;">
+          <div class="w-80 h-96 relative profile-image-3d overflow-visible">
+            <!-- Person image (extends beyond frame) -->
+            <img src="assets/khachik-mkhitaryan.png" alt="Christian Mkhitaryan"
+              class="person absolute top-0 left-0 h-full object-cover object-center transform hover:-translate-y-2 hover:rotate-1 transition-all duration-500 shadow-2xl"
+              style="width: 120%; z-index: 1; border: none; border-radius: 1rem;">
+            <!-- Frame border (creates the frame effect) -->
+            <div class="frame absolute inset-0 shadow-2xl hover:shadow-3xl transition-all duration-500"
+              style="z-index: 2; background: transparent; border: none; border-radius: 1rem;">
+            </div>
+          </div>
+          <!-- Floating Elements -->
+          <div
+            class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 border-2 border-white z-20">
+            <i class="fas fa-balance-scale text-white text-2xl"></i>
+          </div>
+          <div
+            class="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-700 rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 border-2 border-white z-20">
+            <i class="fas fa-globe text-white text-xl"></i>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1 text-center lg:text-left">
+          <div class="lang-de">
+            <div
+              class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
+              <i class="fas fa-certificate mr-2"></i>
+              Fachanwalt für Migrationsrecht
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-bold mb-6 text-gray-900 leading-tight">
+              Christian<br>
+              <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Mkhitaryan</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl leading-relaxed">
+              Ihr Spezialist für deutsches Migrationsrecht in Aschaffenburg. Mit langjähriger Erfahrung begleite ich Sie
+              kompetent durch alle Verfahren – von der Visa-Beantragung bis zur Einbürgerung.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a href="#contact" class="btn-primary">
+                <i class="fas fa-calendar-check mr-2"></i>
+                Beratungstermin vereinbaren
+              </a>
+              <a href="#practice" class="btn-secondary">
+                <i class="fas fa-info-circle mr-2"></i>
+                Mehr erfahren
+              </a>
+            </div>
+          </div>
+          <div class="lang-en hidden">
+            <div
+              class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
+              <i class="fas fa-certificate mr-2"></i>
+              Specialist Lawyer for Migration Law
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-bold mb-6 text-gray-900 leading-tight">
+              Christian<br>
+              <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Mkhitaryan</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl leading-relaxed">
+              Your specialist for German migration law in Aschaffenburg. With years of experience, I guide you
+              competently through all procedures – from visa applications to naturalization.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a href="#contact" class="btn-primary">
+                <i class="fas fa-calendar-check mr-2"></i>
+                Schedule Consultation
+              </a>
+              <a href="#practice" class="btn-secondary">
+                <i class="fas fa-info-circle mr-2"></i>
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-blue-600 mb-2">10+</div>
+          <div class="text-gray-600 lang-de">Jahre Erfahrung</div>
+          <div class="text-gray-600 lang-en hidden">Years Experience</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-blue-600 mb-2">500+</div>
+          <div class="text-gray-600 lang-de">Erfolgreiche Fälle</div>
+          <div class="text-gray-600 lang-en hidden">Successful Cases</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-blue-600 mb-2">8</div>
+          <div class="text-gray-600 lang-de">Rechtsgebiete</div>
+          <div class="text-gray-600 lang-en hidden">Practice Areas</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-blue-600 mb-2">24/7</div>
+          <div class="text-gray-600 lang-de">Erreichbarkeit</div>
+          <div class="text-gray-600 lang-en hidden">Availability</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice Areas - FIXED -->
+  <section id="practice" data-section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 lang-de">Meine Praxisbereiche</h2>
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 lang-en hidden">My Practice Areas</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto lang-de">
+          Als Fachanwalt für Migrationsrecht biete ich umfassende Beratung und Vertretung in allen Bereichen des
+          deutschen Ausländer- und Staatsangehörigkeitsrechts.
+        </p>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto lang-en hidden">
+          As a specialist lawyer for migration law, I offer comprehensive advice and representation in all areas of
+          German immigration and citizenship law.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-passport text-white text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-white">
+              <span class="lang-de">Aufenthaltsrecht</span>
+              <span class="lang-en hidden">Immigration Law</span>
+            </h3>
+          </div>
+          <p class="text-white mb-4 flex-grow lang-de">Visa, Aufenthaltserlaubnis, Niederlassungserlaubnis und alle Fragen rund um den legalen Aufenthalt in Deutschland.</p>
+          <p class="text-white mb-4 flex-grow lang-en hidden">Visa, residence permit, settlement permit and all questions regarding legal stay in Germany.</p>
+          <ul class="text-sm text-white space-y-1 lang-de">
+            <li>• Visa-Beantragung</li>
+            <li>• Aufenthaltserlaubnis</li>
+            <li>• Niederlassungserlaubnis</li>
+          </ul>
+          <ul class="text-sm text-white space-y-1 lang-en hidden">
+            <li>• Visa Application</li>
+            <li>• Residence Permit</li>
+            <li>• Settlement Permit</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-id-card text-white text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-white">
+              <span class="lang-de">Staatsangehörigkeitsrecht</span>
+              <span class="lang-en hidden">Citizenship Law</span>
+            </h3>
+          </div>
+          <p class="text-white mb-4 flex-grow lang-de">Einbürgerung, doppelte Staatsbürgerschaft und alle Fragen zur deutschen Staatsangehörigkeit.</p>
+          <p class="text-white mb-4 flex-grow lang-en hidden">Naturalization, dual citizenship and all questions regarding German citizenship.</p>
+          <ul class="text-sm text-white space-y-1 lang-de">
+            <li>• Einbürgerungsverfahren</li>
+            <li>• Doppelte Staatsbürgerschaft</li>
+            <li>• Staatsangehörigkeitsfeststellung</li>
+          </ul>
+          <ul class="text-sm text-white space-y-1 lang-en hidden">
+            <li>• Naturalization Procedure</li>
+            <li>• Dual Citizenship</li>
+            <li>• Citizenship Determination</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-users text-white text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-white">
+              <span class="lang-de">Familienzusammenführung</span>
+              <span class="lang-en hidden">Family Reunification</span>
+            </h3>
+          </div>
+          <p class="text-white mb-4 flex-grow lang-de">Familiennachzug nach Deutschland und Unterstützung bei der Zusammenführung von Familien.</p>
+          <p class="text-white mb-4 flex-grow lang-en hidden">Family reunification to Germany and support for the reunification of families.</p>
+          <ul class="text-sm text-white space-y-1 lang-de">
+            <li>• Ehegattennachzug</li>
+            <li>• Kindernachzug</li>
+            <li>• Elternnachzug</li>
+          </ul>
+          <ul class="text-sm text-white space-y-1 lang-en hidden">
+            <li>• Spouse Reunification</li>
+            <li>• Child Reunification</li>
+            <li>• Parent Reunification</li>
+          </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-globe-europe text-white text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-white">
+              <span class="lang-de">EU-Freizügigkeitsrecht</span>
+              <span class="lang-en hidden">EU Freedom of Movement Law</span>
+            </h3>
+          </div>
+          <p class="text-white mb-4 flex-grow lang-de">Rechte von EU-Bürgern und deren Familien beim Aufenthalt in Deutschland.</p>
+          <p class="text-white mb-4 flex-grow lang-en hidden">Rights of EU citizens and their families when staying in Germany.</p>
+          <ul class="text-sm text-white space-y-1 lang-de">
+            <li>• EU-Bürgerrechte</li>
+            <li>• Familienangehörige von EU-Bürgern</li>
+            <li>• Daueraufenthaltsrecht</li>
+          </ul>
+          <ul class="text-sm text-white space-y-1 lang-en hidden">
+            <li>• EU Citizen Rights</li>
+            <li>• Family Members of EU Citizens</li>
+            <li>• Right of Permanent Residence</li>
+          </ul>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-briefcase text-white text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-white">
+              <span class="lang-de">Arbeitsmigration</span>
+              <span class="lang-en hidden">Work Migration</span>
+            </h3>
+          </div>
+          <p class="text-white mb-4 flex-grow lang-de">Beratung für Fachkräfte, Unternehmer und Investoren bei der Einwanderung nach Deutschland.</p>
+          <p class="text-white mb-4 flex-grow lang-en hidden">Consulting for skilled workers, entrepreneurs and investors for immigration to Germany.</p>
+          <ul class="text-sm text-white space-y-1 lang-de">
+            <li>• Fachkräfteeinwanderung</li>
+            <li>• Selbständige Tätigkeit</li>
+            <li>• Investoren-Visa</li>
+          </ul>
+          <ul class="text-sm text-white space-y-1 lang-en hidden">
+            <li>• Skilled Worker Immigration</li>
+            <li>• Self-Employment</li>
+            <li>• Investor Visas</li>
+          </ul>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-gavel text-white text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-white">
+              <span class="lang-de">Rechtsmittel & Klagen</span>
+              <span class="lang-en hidden">Appeals & Lawsuits</span>
+            </h3>
+          </div>
+          <p class="text-white mb-4 flex-grow lang-de">Vertretung vor Gerichten und Einlegung von Rechtsmitteln im Migrationsrecht.</p>
+          <p class="text-white mb-4 flex-grow lang-en hidden">Representation before courts and filing of appeals in migration law.</p>
+          <ul class="text-sm text-white space-y-1 lang-de">
+            <li>• Verwaltungsgerichtsverfahren</li>
+            <li>• Eilverfahren</li>
+            <li>• Widerspruchsverfahren</li>
+          </ul>
+          <ul class="text-sm text-white space-y-1 lang-en hidden">
+            <li>• Administrative Court Proceedings</li>
+            <li>• Urgent Proceedings</li>
+            <li>• Objection Proceedings</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" data-section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Image Side -->
+        <div class="relative">
+          <div class="relative z-10">
+            <img src="assets/khachik-mkhitaryan.png" alt="Christian Mkhitaryan"
+              class="w-full max-w-md mx-auto rounded-2xl shadow-2xl">
+          </div>
+          <!-- Background Elements -->
+          <div class="absolute top-8 left-8 w-32 h-32 bg-blue-100 rounded-full -z-10"></div>
+          <div class="absolute bottom-8 right-8 w-24 h-24 bg-indigo-100 rounded-full -z-10"></div>
+        </div>
+
+        <!-- Content Side -->
+        <div>
+          <div class="lang-de">
+            <div
+              class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
+              <i class="fas fa-user-tie mr-2"></i>
+              Über mich
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
+              Ihr Anwalt für <span class="text-blue-600">Migrationsrecht</span>
+            </h2>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              Als Fachanwalt für Migrationsrecht und Gründer der Mkhitaryan Law Firm in Aschaffenburg bringe ich
+              langjährige Erfahrung im deutschen Einwanderungs- und Staatsangehörigkeitsrecht mit. Meine Leidenschaft
+              gilt der kompetenten und engagierten Beratung von Privatpersonen, Familien und Unternehmen.
+            </p>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+              Ich begleite meine Mandanten zuverlässig durch komplexe Verfahren – von der Visa-Beantragung über die
+              Aufenthaltserlaubnis bis hin zur Einbürgerung und Familienzusammenführung. Dabei stehen persönliche
+              Betreuung, klare Kommunikation und fundierte Kenntnisse im deutschen sowie internationalen Migrationsrecht
+              im Mittelpunkt meiner Arbeit.
+            </p>
+          </div>
+          <div class="lang-en hidden">
+            <div
+              class="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
+              <i class="fas fa-user-tie mr-2"></i>
+              About Me
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
+              Your Lawyer for <span class="text-blue-600">Migration Law</span>
+            </h2>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              As a specialist lawyer for migration law and founder of Mkhitaryan Law Firm in Aschaffenburg, I bring
+              years of experience in German immigration and citizenship law. My passion lies in providing competent and
+              dedicated advice to individuals, families, and businesses.
+            </p>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+              I reliably guide my clients through complex procedures – from visa applications and residence permits to
+              naturalization and family reunification. Personal care, clear communication, and solid knowledge of German
+              and international migration law are at the center of my work.
+            </p>
+          </div>
+
+          <!-- Qualifications -->
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="flex items-start space-x-3">
+              <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <i class="fas fa-graduation-cap text-blue-600 text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 lang-de">Fachanwalt für Migrationsrecht</h4>
+                <h4 class="font-semibold text-gray-900 lang-en hidden">Specialist Lawyer for Migration Law</h4>
+                <p class="text-gray-600 text-sm lang-de">Zertifizierte Spezialisierung</p>
+                <p class="text-gray-600 text-sm lang-en hidden">Certified Specialization</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <i class="fas fa-building text-blue-600 text-sm"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900 lang-de">Rechtsanwaltskammer Bamberg</h4>
+                <h4 class="font-semibold text-gray-900 lang-en hidden">Bar Association Bamberg</h4>
+                <p class="text-gray-600 text-sm lang-de">Zugelassener Rechtsanwalt</p>
+                <p class="text-gray-600 text-sm lang-en hidden">Licensed Attorney</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#contact" class="btn-primary">
+              <i class="fas fa-calendar-check mr-2"></i>
+              <span class="lang-de">Termin vereinbaren</span>
+              <span class="lang-en hidden">Schedule Appointment</span>
+            </a>
+            <a href="tel:+4960219014880" class="btn-secondary">
+              <i class="fas fa-phone mr-2"></i>
+              06021 / 901 488 0
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Me Section -->
+  <section data-section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 lang-de">Warum mich wählen?</h2>
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 lang-en hidden">Why Choose Me?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto lang-de">
+          Vertrauen Sie auf meine Expertise und persönliche Betreuung für Ihren Erfolg im deutschen Migrationsrecht.
+        </p>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto lang-en hidden">
+          Trust my expertise and personal care for your success in German migration law.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-certificate text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900 lang-de">Fachanwalt</h3>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900 lang-en hidden">Specialist Lawyer</h3>
+          <p class="text-gray-600 lang-de">Zertifizierte Spezialisierung im Migrationsrecht</p>
+          <p class="text-gray-600 lang-en hidden">Certified specialization in migration law</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-clock text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900 lang-de">Langjährige Erfahrung</h3>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900 lang-en hidden">Years of Experience</h3>
+          <p class="text-gray-600 lang-de">Über 10 Jahre Praxis im Migrationsrecht</p>
+          <p class="text-gray-600 lang-en hidden">Over 10 years of practice in migration law</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-handshake text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900 lang-de">Persönliche Betreuung</h3>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900 lang-en hidden">Personal Care</h3>
+          <p class="text-gray-600 lang-de">Individuelle Beratung für jeden Fall</p>
+          <p class="text-gray-600 lang-en hidden">Individual consultation for every case</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-language text-white text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900 lang-de">Mehrsprachig</h3>
+          <h3 class="text-xl font-semibold mb-3 text-gray-900 lang-en hidden">Multilingual</h3>
+          <p class="text-gray-600 lang-de">Beratung in deutscher und englischer Sprache</p>
+          <p class="text-gray-600 lang-en hidden">Consultation in German and English</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 lang-de">Kontakt aufnehmen</h2>
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 lang-en hidden">Get in Touch</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto lang-de">
+          Vereinbaren Sie noch heute einen Beratungstermin. Ich freue mich darauf, Ihnen bei Ihren rechtlichen Anliegen
+          zu helfen.
+        </p>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto lang-en hidden">
+          Schedule a consultation today. I look forward to helping you with your legal matters.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-16">
+        <!-- Contact Information -->
+        <div>
+          <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+            <h3 class="text-2xl font-bold mb-6 text-gray-900 lang-de">Kanzlei-Informationen</h3>
+            <h3 class="text-2xl font-bold mb-6 text-gray-900 lang-en hidden">Office Information</h3>
+
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-building text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Mkhitaryan Law Firm</h4>
+                  <p class="text-gray-600">Christian Mkhitaryan</p>
+                  <p class="text-gray-600 lang-de">Fachanwalt für Migrationsrecht</p>
+                  <p class="text-gray-600 lang-en hidden">Specialist Lawyer for Migration Law</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-map-marker-alt text-green-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1 lang-de">Adresse</h4>
+                  <h4 class="font-semibold text-gray-900 mb-1 lang-en hidden">Address</h4>
+                  <p class="text-gray-600">Liebigstraße 2</p>
+                  <p class="text-gray-600">63743 Aschaffenburg</p>
+                  <p class="text-gray-600 text-sm lang-de">(barrierefrei zugänglich)</p>
+                  <p class="text-gray-600 text-sm lang-en hidden">(barrier-free accessible)</p>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-phone text-purple-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Telefon</h4>
+                  <a href="tel:+4960219014880" class="text-blue-600 hover:text-blue-700 font-medium">06021 / 901 488
+                    0</a>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-envelope text-orange-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">E-Mail</h4>
+                  <a href="mailto:info@mkhitaryan.de"
+                    class="text-blue-600 hover:text-blue-700 font-medium">info@mkhitaryan.de</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Office Hours -->
+          <div class="bg-blue-50 rounded-2xl p-8">
+            <h3 class="text-xl font-bold mb-4 text-gray-900 lang-de">Sprechzeiten</h3>
+            <h3 class="text-xl font-bold mb-4 text-gray-900 lang-en hidden">Office Hours</h3>
+            <div class="space-y-2 text-gray-700">
+              <div class="flex justify-between">
+                <span class="lang-de">Montag - Freitag:</span>
+                <span class="lang-en hidden">Monday - Friday:</span>
+                <span>9:00 - 18:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="lang-de">Samstag:</span>
+                <span class="lang-en hidden">Saturday:</span>
+                <span class="lang-de">Nach Vereinbarung</span>
+                <span class="lang-en hidden">By appointment</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="lang-de">Sonntag:</span>
+                <span class="lang-en hidden">Sunday:</span>
+                <span class="lang-de">Geschlossen</span>
+                <span class="lang-en hidden">Closed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+          <h3 class="text-2xl font-bold mb-6 text-gray-900 lang-de">Nachricht senden</h3>
+          <h3 class="text-2xl font-bold mb-6 text-gray-900 lang-en hidden">Send Message</h3>
+
+          <form id="contact-form" action="https://formspree.io/f/mnqewqzv" method="POST" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2 lang-de" for="name">Name *</label>
+                <label class="block text-sm font-medium text-gray-700 mb-2 lang-en hidden" for="name">Name *</label>
+                <input type="text" id="name" name="name" required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2 lang-de" for="email">E-Mail *</label>
+                <label class="block text-sm font-medium text-gray-700 mb-2 lang-en hidden" for="email">Email *</label>
+                <input type="email" id="email" name="email" required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2 lang-de" for="subject">Betreff *</label>
+              <label class="block text-sm font-medium text-gray-700 mb-2 lang-en hidden" for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2 lang-de" for="message">Nachricht *</label>
+              <label class="block text-sm font-medium text-gray-700 mb-2 lang-en hidden" for="message">Message *</label>
+              <textarea id="message" name="message" rows="6" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full btn-primary">
+              <i class="fas fa-paper-plane mr-2"></i>
+              <span class="lang-de">Nachricht senden</span>
+              <span class="lang-en hidden">Send Message</span>
+            </button>
+
+            <div id="form-success" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg text-center lang-de">
+              <i class="fas fa-check-circle mr-2"></i>
+              Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.
+            </div>
+            <div id="form-success-en"
+              class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg text-center lang-en">
+              <i class="fas fa-check-circle mr-2"></i>
+              Thank you! Your message has been sent successfully.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Company Info -->
+        <div>
+          <div class="flex items-center space-x-3 mb-6">
+            <div class="w-10 h-10 rounded-lg overflow-hidden bg-white p-1">
+              <img src="assets/logo.png" alt="Mkhitaryan Law Firm Logo" class="w-full h-full object-contain">
+            </div>
+            <div class="font-bold text-xl text-white">Christian Mkhitaryan</div>
+          </div>
+          <p class="text-gray-400 mb-4 lang-de">
+            Fachanwalt für Migrationsrecht in Aschaffenburg. Ihr vertrauensvoller Partner für alle Fragen des deutschen
+            Einwanderungs- und Staatsangehörigkeitsrechts.
+          </p>
+          <p class="text-gray-400 mb-4 lang-en hidden">
+            Specialist lawyer for migration law in Aschaffenburg. Your trusted partner for all questions regarding
+            German immigration and citizenship law.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold text-white mb-4 lang-de">Schnellzugriff</h3>
+          <h3 class="font-semibold text-white mb-4 lang-en hidden">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" class="hover:text-blue-400 transition-colors lang-de">Start</a></li>
+            <li><a href="#home" class="hover:text-blue-400 transition-colors lang-en hidden">Home</a></li>
+            <li><a href="#practice" class="hover:text-blue-400 transition-colors lang-de">Praxisbereiche</a></li>
+            <li><a href="#practice" class="hover:text-blue-400 transition-colors lang-en hidden">Practice Areas</a></li>
+            <li><a href="#about" class="hover:text-blue-400 transition-colors lang-de">Über mich</a></li>
+            <li><a href="#about" class="hover:text-blue-400 transition-colors lang-en hidden">About</a></li>
+            <li><a href="#contact" class="hover:text-blue-400 transition-colors lang-de">Kontakt</a></li>
+            <li><a href="#contact" class="hover:text-blue-400 transition-colors lang-en hidden">Contact</a></li>
+            <li><a href="impressum.html" class="hover:text-blue-400 transition-colors">Impressum</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="font-semibold text-white mb-4 lang-de">Kontakt</h3>
+          <h3 class="font-semibold text-white mb-4 lang-en hidden">Contact</h3>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-map-marker-alt text-blue-400"></i>
+              <div>
+                <div>Liebigstraße 2</div>
+                <div>63743 Aschaffenburg</div>
+              </div>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-phone text-blue-400"></i>
+              <a href="tel:+4960219014880" class="hover:text-blue-400 transition-colors">06021 / 901 488 0</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-envelope text-blue-400"></i>
+              <a href="mailto:info@mkhitaryan.de" class="hover:text-blue-400 transition-colors">info@mkhitaryan.de</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Christian Mkhitaryan. <span class="lang-de">Alle Rechte vorbehalten.</span><span
+            class="lang-en hidden">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+/* Font Family */
+.font-inter {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Custom fade-in effect for section reveal */
+[data-section] {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 1s cubic-bezier(0.4,0,0.2,1), transform 1s cubic-bezier(0.4,0,0.2,1);
+}
+
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Navigation Links */
+.nav-link {
+  @apply text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: #2563eb;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center px-8 py-4 bg-white text-gray-900 font-semibold rounded-xl border-2 border-gray-200 hover:border-blue-600 hover:text-blue-600 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300;
+}
+
+/* Simple Practice Area Cards */
+.practice-card {
+  @apply bg-white p-6 rounded-xl shadow-sm border border-gray-100 transition-all duration-200 cursor-pointer;
+}
+
+.practice-card:hover {
+  @apply bg-gray-50/80 shadow-md;
+}
+
+.practice-icon {
+  @apply w-12 h-12 rounded-lg flex items-center justify-center text-xl mr-6 flex-shrink-0;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Navbar Scroll Effect */
+.navbar-scrolled {
+  @apply bg-white backdrop-blur-xl shadow-lg;
+  background-color: rgba(255, 255, 255, 0.98) !important;
+}
+
+/* Ensure navbar always has proper background */
+#navbar {
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Animation for floating elements */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Focus States */
+input:focus, textarea:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-opacity-50;
+}
+
+/* Flag Images */
+#lang-toggle img {
+  @apply transition-all duration-200 shadow-sm;
+}
+
+#lang-toggle:hover img {
+  @apply shadow-md transform scale-105;
+}
+
+/* Enhanced 3D Profile Image */
+.profile-image-3d {
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.profile-image-3d::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: -20px;
+  bottom: -20px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(147, 51, 234, 0.3));
+  border-radius: 1rem;
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+
+.profile-image-3d:hover::before {
+  transform: translateY(-10px) scale(1.05);
+  opacity: 0.9;
+}
+
+/* Custom shadow for 3D effect */
+.shadow-3xl {
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* 3D Breakout Effect */
+.profile-image-3d .absolute img {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-image-3d:hover .absolute img {
+  transform: translateY(-8px) translateX(5px) rotate(1deg) scale(1.02);
+}
+
+/* Frame Container for 3D Effect */
+.frame-container {
+  position: relative;
+  overflow: visible; /* allow content to overflow the container */
+}
+
+.frame-container .person {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Behind frame by default */
+}
+
+.frame-container .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Above person */
+  pointer-events: none; /* Allow interactions to pass through */
+}
+
+/* Arm extension effect */
+.frame-container:hover .person {
+  z-index: 3; /* Bring arm above frame on hover */
+  transform: translateY(-8px) translateX(5px) rotate(1deg);
+}
+
+/* Enhanced depth for the frame overlay */
+.profile-image-3d .frame {
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile Menu Animation */
+.mobile-menu-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.mobile-menu-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+/* Loading Animation */
+.loading {
+  @apply animate-pulse;
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+  .text-responsive-xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .text-responsive-2xl {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+} 
