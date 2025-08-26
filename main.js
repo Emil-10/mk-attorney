@@ -88,10 +88,19 @@ function setupLanguageToggle() {
     localStorage.setItem('lang', lang);
     
     // Update page title
-    const title = lang === 'de' 
+    const title = lang === 'de'
       ? 'Christian Mkhitaryan - Fachanwalt für Migrationsrecht | Aschaffenburg'
       : 'Christian Mkhitaryan - Specialist Lawyer for Migration Law | Aschaffenburg';
     document.title = title;
+
+    // Update meta description
+    const descriptionMeta = document.querySelector('meta[name="description"]');
+    if (descriptionMeta) {
+      const description = lang === 'de'
+        ? descriptionMeta.dataset.de
+        : descriptionMeta.dataset.en;
+      descriptionMeta.setAttribute('content', description);
+    }
   }
 
   if (langToggle) {
