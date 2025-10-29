@@ -78,26 +78,9 @@
     <div class="container mx-auto px-6">
       <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         <!-- Profile Image -->
-        <div class="flex-shrink-0 relative frame-container" style="padding-right: 60px;">
-          <div class="w-80 h-96 relative profile-image-3d overflow-visible">
-            <!-- Person image (extends beyond frame) -->
-            <img src="assets/khachik-mkhitaryan.png" alt="Christian Mkhitaryan"
-              class="person absolute top-0 left-0 h-full object-cover object-center transform hover:-translate-y-2 hover:rotate-1 transition-all duration-500 shadow-2xl"
-              style="width: 120%; z-index: 1; border: none; border-radius: 1rem;">
-            <!-- Frame border (creates the frame effect) -->
-            <div class="frame absolute inset-0 shadow-2xl hover:shadow-3xl transition-all duration-500"
-              style="z-index: 2; background: transparent; border: none; border-radius: 1rem;">
-            </div>
-          </div>
-          <!-- Floating Elements -->
-          <div
-            class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 border-2 border-white z-20">
-            <i class="fas fa-balance-scale text-white text-2xl"></i>
-          </div>
-          <div
-            class="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-700 rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 border-2 border-white z-20">
-            <i class="fas fa-globe text-white text-xl"></i>
-          </div>
+        <div class="flex-shrink-0">
+          <img src="assets/khachik-mkhitaryan.png" alt="Christian Mkhitaryan"
+            class="rounded-lg shadow-2xl w-80 h-96 object-cover">
         </div>
 
         <!-- Content -->
@@ -199,137 +182,150 @@
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Card 1 -->
-        <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
           <div class="flex items-center mb-4">
-            <i class="fas fa-passport text-white text-2xl mr-3"></i>
-            <h3 class="text-xl font-semibold text-white">
+            <i class="fas fa-passport text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-gray-900">
               <span class="lang-de">Aufenthaltsrecht</span>
               <span class="lang-en hidden">Immigration Law</span>
             </h3>
           </div>
-          <p class="text-white mb-4 flex-grow lang-de">Visa, Aufenthaltserlaubnis, Niederlassungserlaubnis und alle Fragen rund um den legalen Aufenthalt in Deutschland.</p>
-          <p class="text-white mb-4 flex-grow lang-en hidden">Visa, residence permit, settlement permit and all questions regarding legal stay in Germany.</p>
-          <ul class="text-sm text-white space-y-1 lang-de">
+          <p class="text-gray-600 mb-4 flex-grow lang-de">Visa, Aufenthaltserlaubnis, Niederlassungserlaubnis und alle
+            Fragen rund um den legalen Aufenthalt in Deutschland.</p>
+          <p class="text-gray-600 mb-4 flex-grow lang-en hidden">Visa, residence permit, settlement permit and all
+            questions regarding legal stay in Germany.</p>
+          <ul class="text-sm text-gray-500 space-y-1 lang-de">
             <li>• Visa-Beantragung</li>
             <li>• Aufenthaltserlaubnis</li>
             <li>• Niederlassungserlaubnis</li>
           </ul>
-          <ul class="text-sm text-white space-y-1 lang-en hidden">
+          <ul class="text-sm text-gray-500 space-y-1 lang-en hidden">
             <li>• Visa Application</li>
             <li>• Residence Permit</li>
             <li>• Settlement Permit</li>
           </ul>
         </div>
-
         <!-- Card 2 -->
-        <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
           <div class="flex items-center mb-4">
-            <i class="fas fa-id-card text-white text-2xl mr-3"></i>
-            <h3 class="text-xl font-semibold text-white">
+            <i class="fas fa-id-card text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-gray-900">
               <span class="lang-de">Staatsangehörigkeitsrecht</span>
               <span class="lang-en hidden">Citizenship Law</span>
             </h3>
           </div>
-          <p class="text-white mb-4 flex-grow lang-de">Einbürgerung, doppelte Staatsbürgerschaft und alle Fragen zur deutschen Staatsangehörigkeit.</p>
-          <p class="text-white mb-4 flex-grow lang-en hidden">Naturalization, dual citizenship and all questions regarding German citizenship.</p>
-          <ul class="text-sm text-white space-y-1 lang-de">
+          <p class="text-gray-600 mb-4 flex-grow lang-de">Einbürgerung, doppelte Staatsbürgerschaft und alle Fragen zur
+            deutschen Staatsangehörigkeit.</p>
+          <p class="text-gray-600 mb-4 flex-grow lang-en hidden">Naturalization, dual citizenship and all questions
+            regarding German citizenship.</p>
+          <ul class="text-sm text-gray-500 space-y-1 lang-de">
             <li>• Einbürgerungsverfahren</li>
             <li>• Doppelte Staatsbürgerschaft</li>
             <li>• Staatsangehörigkeitsfeststellung</li>
           </ul>
-          <ul class="text-sm text-white space-y-1 lang-en hidden">
+          <ul class="text-sm text-gray-500 space-y-1 lang-en hidden">
             <li>• Naturalization Procedure</li>
             <li>• Dual Citizenship</li>
             <li>• Citizenship Determination</li>
           </ul>
         </div>
-
         <!-- Card 3 -->
-        <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
           <div class="flex items-center mb-4">
-            <i class="fas fa-users text-white text-2xl mr-3"></i>
-            <h3 class="text-xl font-semibold text-white">
+            <i class="fas fa-users text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-gray-900">
               <span class="lang-de">Familienzusammenführung</span>
               <span class="lang-en hidden">Family Reunification</span>
             </h3>
           </div>
-          <p class="text-white mb-4 flex-grow lang-de">Familiennachzug nach Deutschland und Unterstützung bei der Zusammenführung von Familien.</p>
-          <p class="text-white mb-4 flex-grow lang-en hidden">Family reunification to Germany and support for the reunification of families.</p>
-          <ul class="text-sm text-white space-y-1 lang-de">
+          <p class="text-gray-600 mb-4 flex-grow lang-de">Familiennachzug nach Deutschland und Unterstützung bei der
+            Zusammenführung von Familien.</p>
+          <p class="text-gray-600 mb-4 flex-grow lang-en hidden">Family reunification to Germany and support for the
+            reunification of families.</p>
+          <ul class="text-sm text-gray-500 space-y-1 lang-de">
             <li>• Ehegattennachzug</li>
             <li>• Kindernachzug</li>
             <li>• Elternnachzug</li>
           </ul>
-          <ul class="text-sm text-white space-y-1 lang-en hidden">
+          <ul class="text-sm text-gray-500 space-y-1 lang-en hidden">
             <li>• Spouse Reunification</li>
             <li>• Child Reunification</li>
             <li>• Parent Reunification</li>
           </ul>
         </div>
-
         <!-- Card 4 -->
-        <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
           <div class="flex items-center mb-4">
-            <i class="fas fa-globe-europe text-white text-2xl mr-3"></i>
-            <h3 class="text-xl font-semibold text-white">
+            <i class="fas fa-globe-europe text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-gray-900">
               <span class="lang-de">EU-Freizügigkeitsrecht</span>
               <span class="lang-en hidden">EU Freedom of Movement Law</span>
             </h3>
           </div>
-          <p class="text-white mb-4 flex-grow lang-de">Rechte von EU-Bürgern und deren Familien beim Aufenthalt in Deutschland.</p>
-          <p class="text-white mb-4 flex-grow lang-en hidden">Rights of EU citizens and their families when staying in Germany.</p>
-          <ul class="text-sm text-white space-y-1 lang-de">
+          <p class="text-gray-600 mb-4 flex-grow lang-de">Rechte von EU-Bürgern und deren Familien beim Aufenthalt in
+            Deutschland.</p>
+          <p class="text-gray-600 mb-4 flex-grow lang-en hidden">Rights of EU citizens and their families when staying in
+            Germany.</p>
+          <ul class="text-sm text-gray-500 space-y-1 lang-de">
             <li>• EU-Bürgerrechte</li>
             <li>• Familienangehörige von EU-Bürgern</li>
             <li>• Daueraufenthaltsrecht</li>
           </ul>
-          <ul class="text-sm text-white space-y-1 lang-en hidden">
+          <ul class="text-sm text-gray-500 space-y-1 lang-en hidden">
             <li>• EU Citizen Rights</li>
             <li>• Family Members of EU Citizens</li>
             <li>• Right of Permanent Residence</li>
           </ul>
         </div>
-
         <!-- Card 5 -->
-        <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
           <div class="flex items-center mb-4">
-            <i class="fas fa-briefcase text-white text-2xl mr-3"></i>
-            <h3 class="text-xl font-semibold text-white">
+            <i class="fas fa-briefcase text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-gray-900">
               <span class="lang-de">Arbeitsmigration</span>
               <span class="lang-en hidden">Work Migration</span>
             </h3>
           </div>
-          <p class="text-white mb-4 flex-grow lang-de">Beratung für Fachkräfte, Unternehmer und Investoren bei der Einwanderung nach Deutschland.</p>
-          <p class="text-white mb-4 flex-grow lang-en hidden">Consulting for skilled workers, entrepreneurs and investors for immigration to Germany.</p>
-          <ul class="text-sm text-white space-y-1 lang-de">
+          <p class="text-gray-600 mb-4 flex-grow lang-de">Beratung für Fachkräfte, Unternehmer und Investoren bei der
+            Einwanderung nach Deutschland.</p>
+          <p class="text-gray-600 mb-4 flex-grow lang-en hidden">Consulting for skilled workers, entrepreneurs and
+            investors for immigration to Germany.</p>
+          <ul class="text-sm text-gray-500 space-y-1 lang-de">
             <li>• Fachkräfteeinwanderung</li>
             <li>• Selbständige Tätigkeit</li>
             <li>• Investoren-Visa</li>
           </ul>
-          <ul class="text-sm text-white space-y-1 lang-en hidden">
+          <ul class="text-sm text-gray-500 space-y-1 lang-en hidden">
             <li>• Skilled Worker Immigration</li>
             <li>• Self-Employment</li>
             <li>• Investor Visas</li>
           </ul>
         </div>
-
         <!-- Card 6 -->
-        <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
+        <div
+          class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 flex flex-col transition-all duration-300">
           <div class="flex items-center mb-4">
-            <i class="fas fa-gavel text-white text-2xl mr-3"></i>
-            <h3 class="text-xl font-semibold text-white">
+            <i class="fas fa-gavel text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-gray-900">
               <span class="lang-de">Rechtsmittel & Klagen</span>
               <span class="lang-en hidden">Appeals & Lawsuits</span>
             </h3>
           </div>
-          <p class="text-white mb-4 flex-grow lang-de">Vertretung vor Gerichten und Einlegung von Rechtsmitteln im Migrationsrecht.</p>
-          <p class="text-white mb-4 flex-grow lang-en hidden">Representation before courts and filing of appeals in migration law.</p>
-          <ul class="text-sm text-white space-y-1 lang-de">
+          <p class="text-gray-600 mb-4 flex-grow lang-de">Vertretung vor Gerichten und Einlegung von Rechtsmitteln im
+            Migrationsrecht.</p>
+          <p class="text-gray-600 mb-4 flex-grow lang-en hidden">Representation before courts and filing of appeals in
+            migration law.</p>
+          <ul class="text-sm text-gray-500 space-y-1 lang-de">
             <li>• Verwaltungsgerichtsverfahren</li>
             <li>• Eilverfahren</li>
             <li>• Widerspruchsverfahren</li>
           </ul>
-          <ul class="text-sm text-white space-y-1 lang-en hidden">
+          <ul class="text-sm text-gray-500 space-y-1 lang-en hidden">
             <li>• Administrative Court Proceedings</li>
             <li>• Urgent Proceedings</li>
             <li>• Objection Proceedings</li>
